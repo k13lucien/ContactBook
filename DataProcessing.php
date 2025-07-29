@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 require __DIR__ . '/config.php';
 
 
@@ -40,25 +41,6 @@ class DataProcessing
         $json = json_encode($contacts, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
         file_put_contents(DATA_FILE, $json);
     }
-
-
-    /**
-     * Supprimer un contact
-     */
-    public static function deleteContact():bool
-    {
-
-    }
-
-
-    /**
-     * Editer un contact
-     */
-    public static function editContact():bool
-    {
-
-    }
-
 
     /**
      * Affiche les informations relatif à un contact
