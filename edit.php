@@ -1,5 +1,5 @@
 <?php
-require __DIR__.'/vendor/simple-php-form/SimplePHPForm.php';
+require __DIR__.'/vendor/SimplePHPForm.php';
 require __DIR__.'/DataProcessing.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET')

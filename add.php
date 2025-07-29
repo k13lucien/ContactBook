@@ -1,6 +1,6 @@
 <?php
 session_start();
-require __DIR__.'/vendor/simple-php-form/SimplePHPForm.php';
+require __DIR__.'/vendor/SimplePHPForm.php';
 require __DIR__.'/DataProcessing.php';
 
 // Recover session data if exist
