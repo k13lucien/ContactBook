@@ -10,11 +10,14 @@
 ## Installation
 
 cloner le projet
-git clone ...
+git clone https://github.com/k13lucien/ContactBook.git
 
 ## Utilisation
 
 Ouvrez un terminal dans le repertoire de travail
+1. Créez le repertoire qui va stocker les données:
+mkdir data/
+2. Lancez le server de développement intégrer de PHP:
 php -S localhost:8000
 
 Dans le navigateur, accéder à [localhost:8000/](http://localhost:8000)
