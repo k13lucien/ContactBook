@@ -1,0 +1,68 @@
+
+
+.container
+{
+    width: auto 80vw;
+    background: whitesmoke;
+}
+
+h1, h2 {
+    color: darkseagreen;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border-bottom: 1px solid rgba(143, 188, 143, 0.507);
+    background-color: rgba(143, 188, 143, 0.171);
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.add-contact
+{
+    text-decoration: none;
+    font-size: large;
+    background-color: darkseagreen;
+    border: 1px solid darkseagreen;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+p
+{
+    
+}
+
+.buttons
+{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons p {
+    margin: 5px;
+    padding: 5px;
+    background-color: darkseagreen;
+    border-radius: 5%;
+}
+
+.buttons p a {
+    text-decoration: none;
+    color: white;
+}
