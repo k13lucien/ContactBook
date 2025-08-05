@@ -14,40 +14,41 @@ require __DIR__.'/DataProcessing.php';
 </head>
 <body>
 
-    <div class="container">
+    <main class="container">
 
-        <h1><?= APP_NAME ?></h1>
+        <div class="main-content">
 
-        <div class="main">
+            <h1 class="title"><?= APP_NAME ?></h1>
+
             <ul>
 
-            <?php
+                <?php
 
-            $full_contacts = DataProcessing::loadContacts();
+                $full_contacts = DataProcessing::loadContacts();
 
-            foreach ($full_contacts as $contact)
-            {
-                $image_url = htmlspecialchars($contact['image_url']);
-                $nom = htmlspecialchars($contact['name']);
-                $prenom = htmlspecialchars($contact['surname']);
+                foreach ($full_contacts as $contact)
+                {
+                    $image_url = htmlspecialchars($contact['image_url']);
+                    $nom = htmlspecialchars($contact['name']);
+                    $prenom = htmlspecialchars($contact['surname']);
 
-                echo <<<CONTACT
-                    <li>
-                        <a href="view.php?id={$contact['id']}">
-                            <img src="{$contact['image_url']}" style="width: 50px; heigh: 50px"/> {$nom} {$prenom}
-                        </a>
-                    </li>
-                CONTACT;
-            }
+                    echo <<<CONTACT
+                        <li>
+                            <a href="view.php?id={$contact['id']}">
+                                <img src="{$contact['image_url']}"/> {$nom} {$prenom}
+                            </a>
+                        </li>
+                    CONTACT;
+                }
 
-            ?>
+                ?>
+
+                <a href="add.php" class="add-contact">Add contact</a>
                 
             </ul>
         </div>
 
-        <a href="add.php" class="add-contact">Add contact</a>
-
-    </div>
+    </main>
     
 </body>
 </html>
