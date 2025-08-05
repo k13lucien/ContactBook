@@ -83,3 +83,50 @@ ul li a
     font-size: large;
     gap: 1rem;
 }
+
+
+
+
+
+
+
+/*
+
+*/
+main.container .buttons
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: #36376d;
+    padding: 1rem;
+    border-radius: 5px 0 5px 0;
+}
+
+main.container .buttons a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.image
+{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.main-content img
+{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.main-content p
+{
+    margin: 1rem;
+}
+.main-content p span
+{
+    font-weight: bolder;
+}

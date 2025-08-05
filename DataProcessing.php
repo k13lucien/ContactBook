@@ -59,13 +59,14 @@ class DataProcessing
         $image_url = htmlspecialchars($contact['image_url']);
     
         return <<<CONTACT
-            <img src="{$image_url}" alt="" style="width: 50px; heigh: 50px">
-            <p>First Name : {$surname}</p>
-            <p>Last Name : {$name}</p>
-            <p>Phone number : {$phone}</p>
-            <p>Email address : {$email}</p>
-            <p>Birth date : {$birthdate}</p>
-            <p>Contact created at {$created_at}</p>
+            <div class="image"><img src="{$image_url}" alt=""></div>
+            <hr>
+            <p><span>First Name :</span> {$surname}</p>
+            <p><span>Last Name :</span> {$name}</p>
+            <p><span>Phone number :</span> {$phone}</p>
+            <p><span>Email address :</span> {$email}</p>
+            <p><span>Birth date :</span> {$birthdate}</p>
+            <p><span>Contact created at {$created_at}</span></p>
         CONTACT;
     }
 }

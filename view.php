@@ -37,27 +37,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
 </head>
 <body>
     
-    <div class="container">
+    <main class="container">
 
-        <h2>Contact informations</h2>
+        <div>
+            <div class="main-content">
 
-        <?php if ($contact): ?>
+                <?php if ($contact): ?>
 
-            <?= DataProcessing::displayContact($contact) ?>
+                    <?= DataProcessing::displayContact($contact) ?>
 
-        <?php else: ?>
+                <?php else: ?>
 
-            <p>Contact not found</p>
+                    <p>Contact not found</p>
 
-        <?php endif; ?>
+                <?php endif; ?>
+            </div>
 
-    </div>
+            <div class="buttons">
+                <a href="edit.php?id=<?= $contact['id'] ?>">Edit</a>
+                <a href="delete.php?id=<?= $contact['id'] ?>">Delete</a>
+                <a href="index.php">Back to home</a>
+            </div>
+        </div>
 
-    <div class="buttons">
-        <p><a href="edit.php?id=<?= $contact['id'] ?>">Edit</a></p>
-        <p><a href="delete.php?id=<?= $contact['id'] ?>">Delete</a></p>
-        <p><a href="index.php">Back to home</a></p>
-    </div>
+    </main>
 
 </body>
 </html>
