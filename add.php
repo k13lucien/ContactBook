@@ -82,14 +82,17 @@ else
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./templates/styles/styles.css">
     <title>New Contact</title>
 </head>
 <body>
 
-    <?= 
-    // Display form
-    $form->display()
-    ?>
+    <main class="container">
+        <?= 
+        // Display form
+        $form->display()
+        ?>
+    </main>
     
 </body>
 </html>

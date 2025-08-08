@@ -14,6 +14,7 @@ main.container
     display: flex;
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
+    flex-direction: column;
 }
 
 main .main-content
@@ -129,4 +130,23 @@ main.container .buttons a
 .main-content p span
 {
     font-weight: bolder;
+}
+
+
+/**/
+main.container form
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff3b;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main.container input
+{
+    width: 100%;
+    padding: .5rem;
+    background-color: white;
 }
