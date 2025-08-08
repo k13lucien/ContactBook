@@ -56,7 +56,7 @@ class DataProcessing
         $email = htmlspecialchars($contact['email']);
         $birthdate = htmlspecialchars($contact['birthdate']);
         $created_at = htmlspecialchars($contact['created_at']);
-        $image_url = htmlspecialchars($contact['image_url']);
+        $image_url = $contact['image_url'];
     
         return <<<CONTACT
             <div class="image"><img src="{$image_url}" alt=""></div>
